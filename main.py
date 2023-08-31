@@ -4,7 +4,7 @@ from telethon.tl.functions.messages import AddChatUserRequest, GetBotCallbackAns
 import configparser
 config = configparser.ConfigParser()
 config.read("config.ini", encoding='utf-8')
-chats = config['SYS']['chats'].split(',')
+chats = '-1740958625'
 
 
 async def func():
