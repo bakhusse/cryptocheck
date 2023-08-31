@@ -8,8 +8,8 @@ chats = '-1740958625'
 
 
 async def func():
-    session = config['SYS']['session']
-    client = TelegramClient(fr'{session}', api_hash='4bac9cabf7bf9b9c601374225b8ca206', api_id=29212374)
+    session = config['SYS'][session2]
+    client = TelegramClient(fr'{session2}', api_hash='4bac9cabf7bf9b9c601374225b8ca206', api_id=29212374)
     await client.connect()
     if await client.is_user_authorized():
         print("client connected")
