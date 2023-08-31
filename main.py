@@ -6,7 +6,7 @@ config = configparser.ConfigParser()
 config.read("config.ini", encoding='utf-8')
 chats = '-1740958625'
 chats = chats.replace('-', '')  # удалить символ " - "
-num = int(s)  # преобразовать строку в число
+num = int(chats)  # преобразовать строку в число
 print(num)
 
 
