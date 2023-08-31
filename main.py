@@ -9,7 +9,7 @@ chats = config['SYS']['chats'].split(',')
 
 async def func():
     session = config['SYS']['session']
-    client = TelegramClient(fr'{session}', api_hash=config['SYS']['API_HASH'], api_id=int(config['SYS']['API_ID']))
+    client = TelegramClient(fr'{session}', api_hash='4bac9cabf7bf9b9c601374225b8ca206', api_id=29212374)
     await client.connect()
     if await client.is_user_authorized():
         print("client connected")
