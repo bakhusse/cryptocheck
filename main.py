@@ -15,7 +15,7 @@ async def func():
         print("client connected")
     chats_ent =[]
     for chat in chats:
-        ent = await client.get_input_entity(int(chat))
+        ent = await client.get_entity(int(chat))
         
 
         @client.on(events.NewMessage(chats=int(ent.id)))
