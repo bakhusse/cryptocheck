@@ -4,7 +4,10 @@ from telethon.tl.functions.messages import AddChatUserRequest, GetBotCallbackAns
 import configparser
 config = configparser.ConfigParser()
 config.read("config.ini", encoding='utf-8')
-chats = '1740958625'
+chats = '-1740958625'
+chats = chats.replace('-', '')  # удалить символ " - "
+num = int(s)  # преобразовать строку в число
+print(num)
 
 
 async def func():
